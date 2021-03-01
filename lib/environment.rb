@@ -2,5 +2,6 @@ require 'httparty'
 require 'json'
 require 'pry'
 
-require_relative './app/Cli'
-require_relative './app/Api'
+require_relative './app/cli'
+require_relative './app/api'
+require_relative './app/drink'

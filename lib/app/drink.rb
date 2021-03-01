@@ -5,7 +5,7 @@ class Drink
 
   def initialize(name, ingredients, instructions)
     @name = name
-    @ingredients = ingredients
+    @ingredients = []
     @instructions = instructions
     @@all << self
   end
