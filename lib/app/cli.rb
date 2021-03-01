@@ -1,6 +1,6 @@
 class Cli
   def run
     puts "Welcome to Ruby Cocktails"
-    Api.get_drinks
+    Api.drinks_by_letter("c")
   end
 end
