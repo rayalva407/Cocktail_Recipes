@@ -3,7 +3,7 @@ class Drink
 
   @@all = []
 
-  def initialize(name, ingredients, instructions)
+  def initialize(name, instructions)
     @name = name
     @ingredients = []
     @instructions = instructions

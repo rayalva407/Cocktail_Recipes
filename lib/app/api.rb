@@ -4,16 +4,7 @@ class Api
     res =  Net::HTTP.get_response(URI(url))
     drinks = JSON.parse(res.body)
     drinks["drinks"].each do |drink|
-      i = 1
-      drinks_arr = []
-      while i <= 15
-        if drink["strIngredient#{i}"] != null
-          drinks_arr << drink["strIngredient#{i}"]
-        end
-        i += 1
-      end
-      # binding.pry
-      Drink.new(drink["strDrink"], drinks_arr, drink["strInstructions"])
+      Drink.new(drink["strDrink"], drink["strInstructions"])
     end
   end
 end
